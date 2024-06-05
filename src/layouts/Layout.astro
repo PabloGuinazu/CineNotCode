@@ -1,5 +1,6 @@
 ---
 import Navbar from '../components/Navbar.astro';
+import {ButtonSesion} from '../components/ButtonSesion';
 
 interface Props {
 	title: string;
@@ -19,7 +20,9 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-[#13151a]">
-		<Navbar />
+		<Navbar>
+			<!-- <ButtonSesion /> -->
+		<Navbar/>
 		<slot />
 	</body>
 </html>
