@@ -7,19 +7,22 @@ interface Props {
 
 const { href, title } = Astro.props;
 ---
-
-<li class="link-card">
-	<a href={href}>
-		<img src="https://res.cloudinary.com/di98wo6zc/image/upload/v1717184152/46397_k1ixcs.jpg" alt="">
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-	</a>
-</li>
-<style>
+<div class="">
+	<li class="list-none w-48 max-w-full h-72 max-h-full border border-orange-500">
+		<a href={href} class="block hover:hidden w-48 max-w-full h-72 max-h-full bg-cover bg-center bg-[url('https://res.cloudinary.com/di98wo6zc/image/upload/v1717468123/Guardianes_galaxia2_ovugyo.jpg')]">
+        <!-- <img class="w-48" src="https://res.cloudinary.com/di98wo6zc/image/upload/v1717468123/Guardianes_galaxia2_ovugyo.jpg" alt="" > -->
+		</a>
+		<div class="hidden hover:block bg-gray-600 w-48 max-w-full h-72 max-h-full bg-cover bg-center">
+			hola sisjs
+		</div>
+	</li>
+	<h2>
+		{title}
+	</h2>
+</div>
+<!-- <style>
 	.link-card {
-		list-style: none;
+		/* list-style: none; */
 		display: flex;
 		padding: 1px;
 		background-color: #23262d;
@@ -40,4 +43,4 @@ const { href, title } = Astro.props;
 		background-color: #23262d;
 		opacity: 0.8;
 	}
-</style>
+</style> -->
